@@ -1,0 +1,44 @@
+.search {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-transform: inherit;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      padding: 10px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      background-color: white;
+    }
+
+    input {
+      padding: 20px;
+
+      border: none;
+
+      &:focus {
+        outline-width: 0;
+      }
+    }
+  }
+}
+
+.search__button {
+  text-transform: inherit;
+  color: white;
+  background-color: var(--airbnb-pink);
+
+  &:hover {
+    color: var(--airbnb-pink);
+    background-color: white;
+  }
+}

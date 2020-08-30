@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  //   keeps header at the top and on top of everything
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  z-index: 100;
+  width: 100%;
+
+  background-color: white;
+
+  .header__icon {
+    object-fit: contain;
+    height: 100px;
+    margin-left: 20px;
+  }
+
+  .header__center {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    max-width: fit-content;
+
+    padding: 10px;
+    height: 30px;
+    border: 1px solid lightgrey;
+    border-radius: 999px;
+
+    input {
+      border: none;
+      width: 250px;
+
+      height: 1rem;
+      padding: 3px;
+      outline-width: 0;
+    }
+  }
+
+  .header__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15vw;
+    margin-right: 80px;
+  }
+}
